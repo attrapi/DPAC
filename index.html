@@ -176,8 +176,26 @@
       border-radius: 2px;
     }
 
+    /* ── CARDS WRAPPER ── */
+    .cards-wrapper {
+      position: relative;
+      background: linear-gradient(135deg, #691C32 0%, #8b2542 60%, #a63055 100%);
+      overflow: hidden;
+    }
+
+    .cards-wrapper::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('rieles.jpg') center/cover no-repeat;
+      opacity: 0.40;
+      z-index: 0;
+    }
+
     /* ── CARDS SECTION ── */
     .cards-section {
+      position: relative;
+      z-index: 1;
       padding: 48px 32px 72px;
       max-width: 1000px;
       margin: 0 auto;
@@ -186,7 +204,7 @@
     .cards-section h2 {
       text-align: center;
       font-size: 20px;
-      color: #691C32;
+      color: #fff;
       font-weight: 700;
       margin-bottom: 36px;
     }
@@ -326,6 +344,7 @@
   <div class="divider"></div>
 
   <!-- CARDS -->
+  <div class="cards-wrapper">
   <section class="cards-section">
     <h2>Recursos disponibles</h2>
     <div class="cards">
@@ -383,6 +402,7 @@
 
     </div>
   </section>
+  </div>
 
   <!-- FOOTER -->
   <footer>
