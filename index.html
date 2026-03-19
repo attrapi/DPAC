@@ -64,10 +64,27 @@
 
     /* ── HERO BANNER ── */
     .hero {
+      position: relative;
       background: linear-gradient(135deg, #691C32 0%, #8b2542 60%, #a63055 100%);
       color: #fff;
       padding: 64px 48px 56px;
       text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('rieles.jpg') center/cover no-repeat;
+      opacity: 0.18;
+      z-index: 0;
+    }
+
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
     }
 
     .hero h1 {
