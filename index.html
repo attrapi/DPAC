@@ -16,6 +16,68 @@
       padding-top: 64px;
     }
 
+    /* ── SECTION BUTTONS ── */
+    .section-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 28px 32px 8px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-group {
+      display: flex;
+      align-items: stretch;
+      border: 1px solid #691C32;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .section-group-label {
+      background: #691C32;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    a.section-group-label:hover { background: #8b2542; }
+
+    .section-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: #691C32;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .section-btn:hover { background: #8b2542; transform: translateY(-1px); }
+
+    .section-group .section-btn {
+      border-radius: 0;
+      background: #fff;
+      color: #691C32;
+      border-left: 1px solid #691C32;
+    }
+
+    .section-group .section-btn:hover {
+      background: #fdf3f5;
+      transform: none;
+    }
+
     /* ── TOP BAR ── */
     .top-bar {
       position: fixed;
@@ -322,6 +384,16 @@
     <h1>Dirección de Procesos Administrativos<br>de Construcción</h1>
     <p>Coordinación y seguimiento de los procesos administrativos vinculados a las obras y proyectos de construcción de la institución.</p>
   </section>
+
+  <!-- SECTION BUTTONS -->
+  <div class="section-buttons">
+    <a href="https://attrapi.github.io/Subdireccion-de-Archivos/" target="_blank" class="section-btn">SA</a>
+    <div class="section-group">
+      <a href="https://attrapi.github.io/Obras_inducidas_tramo2/" target="_blank" class="section-group-label">SGOI</a>
+      <a href="https://attrapi.github.io/SPAC/" target="_blank" class="section-btn">SPAC</a>
+      <a href="https://attrapi.github.io/Obras_inducidas_tramo2/" target="_blank" class="section-btn">Obras inducidas</a>
+    </div>
+  </div>
 
   <!-- INTRO -->
   <section class="intro">
