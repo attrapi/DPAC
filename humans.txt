@@ -1,0 +1,10 @@
+/* AUTOR */
+Nombre:   Daniel De La Garza Cordero
+Rol:      Enlace de Subdirección de Procesos Administrativos de Construcción
+Área:     ATTRAPI — Dirección de Procesos Administrativos de Construcción
+Contacto: delagarzadgc@gmail.com
+
+/* PROYECTO */
+Sitio:    DPAC — Portal de la Dirección de Procesos Administrativos de Construcción
+Estándar: HTML5, CSS3
+Hosting:  GitHub Pages
